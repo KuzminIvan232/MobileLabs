@@ -4,6 +4,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ThemeProvider } from 'styled-components/native'; // [cite: 119]
 import { Ionicons } from '@expo/vector-icons';
 import { darkTheme, lightTheme } from './src/theme/themes';
+import CommunityScreen from './src/screens/CommunityScreen';
+import ChatScreen from './src/screens/ChatScreen';
+import SafetyScreen from './src/screens/SafetyScreen';
 
 // Імпорт екранів
 import StoreScreen from './src/screens/StoreScreen';
@@ -40,9 +43,9 @@ export default function App() {
           })}
         >
           <Tab.Screen name="Store" component={StoreScreen} />
-          <Tab.Screen name="Community" component={PlaceholderScreen} />
-          <Tab.Screen name="Chat" component={PlaceholderScreen} />
-          <Tab.Screen name="Safety" component={PlaceholderScreen} />
+          <Tab.Screen name="Community" component={CommunityScreen} />
+          <Tab.Screen name="Chat" component={ChatScreen} />
+          <Tab.Screen name="Safety" component={SafetyScreen} />
           <Tab.Screen name="Profile">
             {props => <ProfileScreen {...props} toggleTheme={toggleTheme} />}
           </Tab.Screen>
