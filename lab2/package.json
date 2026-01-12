@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "expo": "^54.0.31",
+    "styled-components": "^6.3.5",
+    "styled-components-native": "^1.0.2"
+  }
+}
